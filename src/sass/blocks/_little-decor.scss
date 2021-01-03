@@ -1,0 +1,12 @@
+.little-decor {
+    &__images {
+        margin-top: 26px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img {
+        border-radius: 100% 100% 0 0;
+        height: 901px;
+        margin-bottom: 176px;
+    }
+}

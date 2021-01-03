@@ -1,0 +1,22 @@
+.footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../img/footer.png') center center/cover no-repeat;
+    padding-top: 25px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: #FFFFFF;
+        font-family: 'CormorantGaramondRegular';
+    }
+    &__logo {
+        display: block;
+        width: 106px;
+        height: 43px;
+        margin: 18px auto 0;
+    }
+}

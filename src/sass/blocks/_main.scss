@@ -1,0 +1,103 @@
+.main {
+    min-height: 529px;
+    padding-top: 15px;
+    padding-bottom: 42px;
+    &__slider {
+        position: relative;
+        height: 472px;
+        max-width: 100%;
+    }
+    &__slide {
+        height: 472px;
+        padding: 36px 35px 42px 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        &_last {
+            justify-content: space-between;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../img/mainslider3.png') center center/cover no-repeat;
+        }
+    }
+    &__title {
+        max-width: 630px;
+        font-size: 64px;
+        line-height: 78px;
+        font-family: 'CormorantInfantBold', serif;
+        color: $main-color;
+        text-align: center;
+        margin-bottom: 51px;
+        span {
+            font-size: 96px;
+            line-height: 46px;
+        }
+        &_last {
+            margin-top: 30px;
+        }
+        
+    }
+    &__text {
+        max-width: 914px;
+        font-family: 'CormorantGaramondRegular', serif;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: $heading-color;
+        margin-bottom: 69px;
+    }
+    &__slide-footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__adress {
+        font-size: 24px;
+        line-height: 29px;
+        color: $heading-color;
+        font-family: 'CormorantGaramondRegular', serif
+    }
+}
+
+.slide-one {
+    background: url('../img/main slider 1.jpg') center center/cover no-repeat;
+}
+.slide-two {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/mainslider2.jpg') center center/cover no-repeat;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 0;
+    top: 50%;
+    padding: 10px;
+}
+
+.prev {
+    left: 13px;
+}
+
+.next {
+    right: 13px;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}

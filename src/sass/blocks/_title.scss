@@ -1,0 +1,35 @@
+.title {
+    font-size: 56px;
+    line-height: 78px;
+    font-weight: normal;
+    font-family: 'CormorantInfantRegular', serif;
+    color: $heading-color;
+}
+.title-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    font-size: 20px;
+    line-height: 24px;
+    color: #EBEBEB;
+    font-family: 'CormorantGaramondRegular';
+    img {
+        margin-left: 17px;
+    }
+}
+
+.big-text {
+    margin-top: 156px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    &__style {
+        font-size: 300px;
+        line-height: 404px;
+        color: rgba(0, 0, 0, 0.25);
+        font-family: 'CinzelDecorativeRegular';
+    }
+}

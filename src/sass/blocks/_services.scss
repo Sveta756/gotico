@@ -1,0 +1,44 @@
+.services {
+    &__block {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        font-size: 36px;
+        line-height: 46px;
+        color: $heading-color;
+        font-family: 'CormorantGaramondRegular';
+        font-weight: normal;
+        max-width: 773px;
+        text-align: center;
+    }
+    &__cards {
+        float: right;
+        margin-top: -150px;
+        margin-right: 150px;
+    }
+    &__card {
+        width: 245px;
+        height: 245px;
+        background:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('../img/circle.png') center center/cover no-repeat;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img {
+        border-radius: 100%;
+    }
+    &__cards-two {
+        display: flex;
+    }
+    &__card {
+        &_mb  {
+            margin-bottom: -50px;
+            margin-left: 200px;
+        }
+        &_ml {
+            margin-left: 140px;
+        }
+    }
+}

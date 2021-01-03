@@ -1,0 +1,32 @@
+.header {
+    background: #131315;
+    height: 77px;
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__menu {
+       display: flex; 
+       justify-content: space-between;
+    }
+    &__item {
+        list-style-type: none;
+        margin-left: 267px;
+        &:nth-child(2) {
+            margin-left: 193px; 
+        } 
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+        
+    }
+    &__link {
+        font-family: 'CormorantGaramondRegular', serif;
+        font-size: 30px;
+        line-height: 36px;
+        text-decoration: none;
+        color: $main-color;
+    }
+    
+}

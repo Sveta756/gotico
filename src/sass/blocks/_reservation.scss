@@ -1,0 +1,64 @@
+.reservation {
+    margin-top: 461px;
+    padding-bottom: 37px;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__img {
+        height: 324px;
+        border-radius: 200px 200px 0 0;
+    }
+    &__modal {
+        margin-bottom: 99px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 21px 30px 48px 30px;
+        width: 437px;
+        min-height: 300px;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../img/modal-bg.jpg') center center/cover no-repeat;
+    }
+    &__modal-title {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 44px;
+        color: $heading-color;
+        font-family: 'CormorantGaramondRegular';
+    }
+    &__text {
+        margin: 20px 0;
+        text-align: center;
+        font-size: 36px;
+        line-height: 44px;
+        color: $text-color;
+        font-family: 'CormorantGaramondRegular';
+    }
+    // &__address {
+    //     width: 466px;
+    // }
+    &__address-title {
+        font-size: 72px;
+        line-height: 87px;
+        font-family: 'CormorantInfantRegular';
+        color: $heading-color;
+        font-weight: normal;
+        span {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+    }
+    &__address-text {
+        font-size: 40px;
+        line-height: 87px;
+        font-family: 'CormorantGaramondRegular';
+        color: $heading-color;
+        font-weight: normal;
+    }
+}

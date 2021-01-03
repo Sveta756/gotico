@@ -1,0 +1,102 @@
+.modal {
+    z-index: 3;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 30px 22px;
+    width: 700px;
+    z-index: 3;
+    min-height: 630px;
+    background:url('../img/modal.jpg') center center/cover no-repeat;
+    &__title {
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 58px;
+        color: $main-color;
+        font-family: 'CormorantGaramondRegular';
+        text-align: center;
+    }
+    &__text {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: $main-color;
+        font-family: 'CormorantGaramondRegular';
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 36px;
+    }
+    &__input {
+        padding: 16px 10px 14px 10px;
+        width: 305px;
+        min-height: 59px;
+        background: #DCC9BF;
+        border: none;
+        margin-bottom: 84px;
+        font-size: 24px;
+        line-height: 29px;
+        color: #372F42;
+        font-weight: bold;
+        font-family: 'CormorantGaramondRegular';
+        &:nth-child(5) {
+            margin-bottom: 36px;
+        }
+        &:last-child {
+            margin-bottom: 36px;
+        }
+        &:nth-child(2n) {
+            margin-left: 26px;
+        }
+        &::-webkit-input-placeholder {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            color: #372F42;
+            font-family: 'CormorantGaramondRegular';
+            text-align: center;
+        }
+    }
+    &__close {
+        position: absolute;
+        top: 11px;
+        right: 12px;
+        cursor: pointer;
+    }
+    &__text-main {
+        font-size: 72px;
+        line-height: 87px;
+        color: $heading-color;
+        font-weight: bold;
+        font-family: 'CormorantGaramondRegular';
+        text-align: center;
+        margin-top: 79px;
+        margin-bottom: 79px;
+        &_mr {
+            margin-top: 122px;
+            margin-bottom: 122px;
+        }
+    }
+    &__text-footer {
+        font-size: 36px;
+        line-height: 44px;
+        color: $text-color;
+        font-weight: bold;
+        font-family: 'CormorantGaramondRegular';
+        text-align: center;
+    }
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0, .56);
+}

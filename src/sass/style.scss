@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:  #1a1a1c;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+
+@import 'base/variables';
+
+
+@import 'libs/fonts';
+
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/btn';
+@import 'blocks/title';
+@import 'blocks/_little-menu';
+@import 'blocks/little-decor';
+@import 'blocks/services';
+@import 'blocks/reservation';
+@import 'blocks/footer';
+@import 'blocks/modal';
