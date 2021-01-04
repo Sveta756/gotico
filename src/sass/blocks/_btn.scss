@@ -11,6 +11,12 @@
     color: #372F42;
     font-family: 'CormorantGaramondRegular', serif;
     font-weight: bold;
+    transition: 0.5s all;
+    &:hover {
+        box-shadow: 3px 3px 20px $text-color;
+        color: black;
+        
+    }
     &_big {
         min-width: 381px;
         min-height: 60px;
@@ -23,4 +29,5 @@
         font-size: 48px;
         line-height: 48px;
     }
+
 }

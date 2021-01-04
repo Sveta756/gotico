@@ -33,3 +33,20 @@
         font-family: 'CinzelDecorativeRegular';
     }
 }
+
+.big-title {
+    font-family: 'CormorantInfantBold';
+    font-size: 96px;
+    line-height: 116px;
+    text-align: center;
+    color:$main-color;
+    span {
+        margin-right: -55px;
+        font-family: 'CinzelDecorativeRegular';
+        font-weight: normal;
+        font-size: 144px;
+        line-height: 144px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.42);
+    }
+}

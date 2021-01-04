@@ -1,0 +1,40 @@
+.contact {
+    &__block {
+        margin-top: 32px;
+        margin-bottom: 47px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__header {
+        display: flex;
+    }
+    &__img {
+        margin-right: 20px;
+    }
+    &__title {
+        font-size: 64px;
+        line-height: 78px;
+        color: $heading-color;
+        font-weight: normal;
+        font-family: 'CormorantGaramondRegular';
+    }
+    &__text {
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: normal;
+        font-family: 'CormorantGaramondRegular';
+        color: $text-color;
+        margin-top: 9px;
+    }
+    &__map {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 68px;
+    }
+
+}

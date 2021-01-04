@@ -12,13 +12,14 @@
     }
     &__item {
         list-style-type: none;
-        margin-left: 267px;
+        margin-left: 169px;
         &:nth-child(2) {
-            margin-left: 193px; 
+            margin-left: 133px; 
         } 
         &:nth-child(1) {
             margin-left: 0;
         }
+    
         
     }
     &__link {
@@ -27,6 +28,24 @@
         line-height: 36px;
         text-decoration: none;
         color: $main-color;
+        transition: 0.5s all;
+        &_active {
+            color: #EBEBEB;
+        }
+        &:hover {
+            text-shadow: 3px 3px 20px #FFF;
+        }
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+    &__social-link {
+        margin-right: 18px;
+        &:last-child {
+            margin-right: 0;
+        }
     }
     
 }
