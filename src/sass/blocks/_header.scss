@@ -18,9 +18,10 @@
         } 
         &:nth-child(1) {
             margin-left: 0;
-        }
-    
-        
+        }        
+    }
+    &__logo {
+        background: #131315;
     }
     &__link {
         font-family: 'CormorantGaramondRegular', serif;

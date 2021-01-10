@@ -79,10 +79,16 @@
 
 .prev {
     left: 13px;
+    &_two {
+        left: -23px;
+    }
 }
 
 .next {
     right: 13px;
+    &_two {
+        right: -23px;
+    }
 }
 
 @-webkit-keyframes fade {

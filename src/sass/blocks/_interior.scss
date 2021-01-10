@@ -1,0 +1,28 @@
+.interior {
+    margin-bottom: 135px;
+    &__title {
+        font-weight: normal;
+        font-size: 64px;
+        line-height: 78px;
+        color: $heading-color;
+        font-family: 'CormorantInfantRegular';
+        text-align: center;
+        margin-bottom: 29px;
+    }
+    &__slider {
+        position: relative;
+        height: 504px;
+        max-width: 100%;
+    }
+    &__slide {
+        height: 504px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+}

@@ -1,0 +1,61 @@
+.workers {
+    margin-bottom: 77px;
+    &__title {
+        font-size: 64px;
+        line-height: 78px;
+        color: $heading-color;
+        font-family: 'CormorantInfantRegular';
+        font-weight: normal;
+        text-align: center;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__about {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        &:first-child {
+            margin-right: 36px;
+        }
+    }
+    &__photo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__img {
+        border-radius: 200px 200px 0 0;
+        height: 340px;
+    }
+    &__name {
+        font-size: 24px;
+        line-height: 30px;
+        color: $heading-color;
+        font-family: 'CormorantGaramondRegular';
+        font-weight: normal;
+        text-align: center;
+        margin-top: 22px;
+    }
+    &__text {
+        font-size: 24px;
+        line-height: 30px;
+        color:$text-color;
+        font-family: 'CormorantGaramondRegular';
+        margin-left: 93px;
+        &:first-child {
+            margin-left: 0;
+            margin-right: 93px;
+        }
+    }
+    &__awards {
+        display: flex;
+        margin-top: 77px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__diploma {
+        margin-right: 61px;
+    }
+}

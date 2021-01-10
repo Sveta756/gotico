@@ -1,0 +1,87 @@
+.about {
+    &__header {
+        margin-top: 26px;
+        margin-bottom: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        padding-left: 57px;
+        font-family: 'CormorantInfantBold';
+        font-size: 96px;
+        line-height: 116px;
+        color:$main-color;
+        span {
+            margin-right: -55px;
+            font-family: 'CinzelDecorativeRegular';
+            font-weight: normal;
+            font-size: 144px;
+            line-height: 144px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.42);
+        }
+    }
+    &__text {
+        font-size: 24px;
+        line-height: 33px;
+        color: $text-color;
+        font-family: 'CormorantGaramondRegular';
+    }
+    &__chef {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__img-wrapper {
+        width: 229px;
+        height: 229px;
+        background:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('../img/circle.png') center center/cover no-repeat;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 11px;
+    }
+    &__chef-photo {
+        border-radius: 100%;
+    }
+    &__chef-name {
+        font-size: 24px;
+        line-height: 29px;
+        color: $heading-color;
+        font-weight: normal;
+        font-family: 'CormorantGaramondRegular';
+    }
+    &__chef-subtitle {
+        font-size: 18px;
+        line-height: 22px;
+        color: $heading-color;
+        font-weight: normal;
+        font-family: 'CormorantGaramondRegular';
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 100px;
+    }
+    &__menu-block {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__menu-title {
+        font-weight: normal;
+        font-size: 64px;
+        line-height: 78px;
+        font-family: 'CormorantInfantRegular';
+        color:$heading-color;
+        margin-bottom: 16px;
+    }
+    &__menu-img {
+        border-radius: 200px 200px 0 0;
+        height: 340px;
+        margin-top: 20px;
+    }
+}

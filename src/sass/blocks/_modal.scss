@@ -7,7 +7,6 @@
     transform: translate(-50%, -50%);
     padding: 30px 30px 22px;
     width: 700px;
-    z-index: 3;
     min-height: 630px;
     background:url('../img/modal.jpg') center center/cover no-repeat;
     &__title {
@@ -85,6 +84,9 @@
         font-weight: bold;
         font-family: 'CormorantGaramondRegular';
         text-align: center;
+    }
+    &_three {
+        display: none;
     }
 }
 
