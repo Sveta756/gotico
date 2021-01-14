@@ -9,6 +9,7 @@ function hideTabContent(a) {
     for (let i = a; i < tabContent.length; i++) {
         tabContent[i].classList.remove('show');
         tabContent[i].classList.add('hide');
+        tab[i].classList.remove('menu__active');
     }
 }
 
@@ -21,6 +22,7 @@ function showTabContent(b) {
     if (tabContent[b].classList.contains('hide')) {
         tabContent[b].classList.remove('hide');
         tabContent[b].classList.add('show');
+        tab[b].classList.add('menu__active');
     }
 }
 

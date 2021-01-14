@@ -39,7 +39,7 @@
                         Подарить ребенку веселое настроение и найти новых друзей просто - достаточно прийти в гости в кофейню Gotico.
                         Специальное детское меню, аниматор и море эмоций.
                     </p>
-                    <button class="btn btn_big">Забронировать</button>
+                    <button class="btn btn_big btn_modalopen">Забронировать</button>
                 </div>
                 <img src="img/cake1.jpg" alt="cake" class="service__img">
             </div>
@@ -52,7 +52,7 @@
                         Проведите незабываемо свой праздник в нестандартной и притягательной атмосфере.
                         Шоу от бариста и специальные скидки именнинику в кофейне Gotico.
                     </p>
-                    <button class="btn btn_big">Забронировать</button>
+                    <button class="btn btn_big btn_modalopen">Забронировать</button>
                 </div>
             </div>
 
@@ -62,9 +62,9 @@
                     <p class="service__text">
                         В кофейне Gotico вы сможете провести идивидуальную уникальную съемку, после которой получатся потрясающие фотографии.
                     </p>
-                    <button class="btn btn_big">Забронировать</button>
+                    <button class="btn btn_big btn_modalopen">Забронировать</button>
                 </div>
-                <img src="img/cake1.jpg" alt="cake" class="service__img">
+                <img src="img/black-table.jpg" alt="cake" class="service__img">
             </div>
         </div>
     </div>
@@ -96,25 +96,26 @@
         </div>
     </footer>
 
-    <div class="overlay">
+    <div class="overlay" data-modal>
         <div class="modal modal_one">
             <h2 class="modal__title">Готическая кофейня Gotico</h2>
             <p class="modal__text">Большой проспект П. С., 64</p>
             <form class="modal__form">
-                <input type="datetime" name="date" class="modal__input" placeholder="Дата / время"> 
-                <input type="number" name="quantity" class="modal__input" placeholder="Количество человек">   
-                <input type="text" name="name" class="modal__input" placeholder="Имя">   
-                <input type="text" name="second name" class="modal__input" placeholder="Фамилия">  
-                <input type="email" name="email" class="modal__input" placeholder="Email">   
-                <input type="number" name="phone-number" class="modal__input" placeholder="Телефон">      
+                <input type="datetime" name="date" required class="modal__input" placeholder="Дата / время"> 
+                <input type="number" name="quantity" required class="modal__input" placeholder="Количество человек">   
+                <input type="text" name="name" required class="modal__input" placeholder="Имя">   
+                <input type="text" name="second name" required class="modal__input" placeholder="Фамилия">  
+                <input type="email" name="email" required class="modal__input" placeholder="Email">   
+                <input type="text" name="phone-number" required  class="modal__input" placeholder="Телефон"> 
+                <button class="btn btn_modal" name="submit" type="submit">Забронировать</button>    
             </form>
-            <button class="btn btn_modal">Забронировать</button>
+           
             <div class="modal__close"><img src="icon/close.svg" alt="close" class="modal__img"></div>
         </div>
     </div>
 
 
-    <div class="overlay">
+    <div class="overlay" data-modal>
         <div class="modal modal_two">
             <h2 class="modal__title">Готическая кофейня Gotico</h2>
             <p class="modal__text">Большой проспект П. С., 64</p>

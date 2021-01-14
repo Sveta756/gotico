@@ -4,7 +4,8 @@
             modal = document.querySelector(modalSelector),
             close = document.querySelector(closeSelector),  
             overlay = document.querySelector('.overlay'),  
-            scroll = calcScroll();   
+            scroll = calcScroll(),
+            windows = document.querySelectorAll('[data-modal]'); 
 
         trigger.forEach(item => {
             item.addEventListener('click', (e) => {
@@ -12,9 +13,9 @@
                     e.preventDefault();
                 }
 
-                // windows.forEach(item => {
-                //     item.style.display = 'none';
-                // });
+                windows.forEach(item => {
+                    item.style.display = 'none';
+                });
     
                 modal.style.display = 'block';
                 document.body.style.overflow = 'hidden';
@@ -26,9 +27,9 @@
 
         close.addEventListener('click', () => {
 
-            // windows.forEach(item => {
-            //     item.style.display = 'none';
-            // });
+            windows.forEach(item => {
+                item.style.display = 'none';
+            });
 
             modal.style.display = 'none';
             document.body.style.overflow = '';
@@ -57,7 +58,8 @@
     }
 
 
-    bindModal('.btn', '.modal_one', '.modal_one .modal__close');
+    bindModal('.btn_modalopen', '.modal_one', '.modal_one .modal__close');
+    // bindModal('.btn_modal', '.modal_two', '.modal_two .modal__close');
     
     
 // };

@@ -1,7 +1,7 @@
 .about {
     &__header {
         margin-top: 26px;
-        margin-bottom: 35px;
+        margin-bottom: 45px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -70,6 +70,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+        &:first-child {
+            margin-right: 20px;
+        }
     }
     &__menu-title {
         font-weight: normal;
