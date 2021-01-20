@@ -9,6 +9,10 @@
 <body>
     <header class="header">
         <div class="container">
+            <a href="index.html" class="header__logo header__logo_mobile"><img src="icon/logo.png" alt="logo"></a>
+            <div class="icon">
+                <div class="hamburger"></div>
+            </div> 
            <div class="header__block">
                 <a href="index.html" class="header__logo"><img src="icon/logo.png" alt="logo"></a>
                 <nav class="header__nav">
@@ -96,18 +100,18 @@
         </div>
     </footer>
 
-    <div class="overlay" data-modal>
+    <div class="overlay" id="modal_one">
         <div class="modal modal_one">
             <h2 class="modal__title">Готическая кофейня Gotico</h2>
             <p class="modal__text">Большой проспект П. С., 64</p>
             <form class="modal__form">
-                <input type="datetime" name="date" required class="modal__input" placeholder="Дата / время"> 
+                <input type="datetime-local" name="date" required class="modal__input" placeholder="Дата / время"> 
                 <input type="number" name="quantity" required class="modal__input" placeholder="Количество человек">   
                 <input type="text" name="name" required class="modal__input" placeholder="Имя">   
                 <input type="text" name="second name" required class="modal__input" placeholder="Фамилия">  
                 <input type="email" name="email" required class="modal__input" placeholder="Email">   
                 <input type="text" name="phone-number" required  class="modal__input" placeholder="Телефон"> 
-                <button class="btn btn_modal" name="submit" type="submit">Забронировать</button>    
+                <button class="btn btn_modal btn_submit" name="submit" type="submit">Забронировать</button>    
             </form>
            
             <div class="modal__close"><img src="icon/close.svg" alt="close" class="modal__img"></div>
@@ -115,7 +119,7 @@
     </div>
 
 
-    <div class="overlay" data-modal>
+    <div class="overlay" id="modal-two">
         <div class="modal modal_two">
             <h2 class="modal__title">Готическая кофейня Gotico</h2>
             <p class="modal__text">Большой проспект П. С., 64</p>
@@ -125,6 +129,11 @@
         </div>
     </div>
 
+    <script src='js/forms.js'></script>
     <script src='js/modal.js'></script>
+    <script>
+          bindModal('.btn_modalopen', '.modal_one', '.modal_one .modal__close');
+    </script>
+    <script src='js/hamburger.js'></script>
 </body>
 </html>

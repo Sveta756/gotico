@@ -1,7 +1,8 @@
 .icon {
+	display: none;
     position: absolute;
-	top: 26px;
-	right: 48px;
+	top: 16px;
+	right: 28px;
 	width: 40px;
 	height: 40px;
     cursor: pointer;
@@ -9,7 +10,7 @@
 	
 .hamburger {
     width: 30px;
-	height: 4px;
+	height: 2px;
 	background-color: #fff;
 	position: absolute;
 	top: 50%;
@@ -20,7 +21,7 @@
         content: '';
 		position: absolute;
 		width: 30px;
-		height: 4px;
+		height: 2px;
 		top: 10px;
 		background-color: #fff;
 		transition: .5s;
@@ -30,7 +31,7 @@
         content: '';
 		position: absolute;
 		width: 30px;
-		height: 4px;
+		height: 2px;
 		top: -10px;
 		background-color: #fff;
 		transition: .5s;
@@ -54,6 +55,6 @@
     }
 }
 .show {
-    transform: translateX(0); 
+    transform: translateX(0) !important; 
 
 } 

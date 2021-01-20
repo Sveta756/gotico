@@ -1,6 +1,12 @@
 .header {
     background: #131315;
     height: 77px;
+    &__logo {
+        display:block;
+        &_mobile {
+            display: none;
+        }
+    }
     &__block {
         display: flex;
         align-items: center;

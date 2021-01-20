@@ -11,8 +11,13 @@ gulp.task('server', function() {
 
     browserSync({
         server: {
-            baseDir: "dist"
-        }
+            baseDir: "dist",
+            serveStaticOptions: {
+                extensions: ["html"]
+            }
+        },
+        port: 4000,
+        notify: true
     });
 
     gulp.watch("src/*.html").on('change', browserSync.reload);

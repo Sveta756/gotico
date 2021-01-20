@@ -39,6 +39,9 @@
         color: #372F42;
         font-weight: bold;
         font-family: 'CormorantGaramondRegular';
+        &:focus {
+            background: #DF9E79;
+        }
         &:nth-child(5) {
             margin-bottom: 36px;
         }
@@ -62,6 +65,10 @@
         top: 11px;
         right: 12px;
         cursor: pointer;
+        &:hover {
+            color: $main-color;
+        }
+
     }
     &__text-main {
         font-size: 72px;

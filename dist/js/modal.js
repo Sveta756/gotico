@@ -1,4 +1,4 @@
-// const modals = () => {
+window.addEventListener('DOMContentLoaded', function() {
     function bindModal(triggerSelector, modalSelector, closeSelector) {
         const trigger = document.querySelectorAll(triggerSelector),
             modal = document.querySelector(modalSelector),
@@ -56,10 +56,4 @@
 
         return scrollWidth;
     }
-
-
-    bindModal('.btn_modalopen', '.modal_one', '.modal_one .modal__close');
-    // bindModal('.btn_modal', '.modal_two', '.modal_two .modal__close');
-    
-    
-// };
+});  

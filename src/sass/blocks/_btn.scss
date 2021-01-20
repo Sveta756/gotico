@@ -13,9 +13,9 @@
     font-weight: bold;
     transition: 0.5s all;
     &:hover {
+        background-color: $text-color;
         box-shadow: 3px 3px 20px $text-color;
-        color: black;
-        
+        color: black; 
     }
     &_big {
         min-width: 381px;

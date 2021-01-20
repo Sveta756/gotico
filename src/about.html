@@ -9,6 +9,10 @@
 <body>
     <header class="header">
         <div class="container">
+            <a href="index.html" class="header__logo header__logo_mobile"><img src="icon/logo.png" alt="logo"></a>
+            <div class="icon">
+                <div class="hamburger"></div>
+            </div> 
            <div class="header__block">
                 <a href="index.html" class="header__logo"><img src="icon/logo.png" alt="logo"></a>
                 <nav class="header__nav">
@@ -65,9 +69,9 @@
         <div class="container">
             <h2 class="interior__title">Интерьер кофейни</h2>
             <div class="interior__slider">
-                <div class="interior__slide"><img src="img/interior1.jpg" alt="interior" class="interior__img"></div>
-                <div class="interior__slide"><img src="img/interior1.jpg" alt="interior" class="interior__img"></div>
-                <div class="interior__slide"><img src="img/interior1.jpg" alt="interior" class="interior__img"></div>
+                <div class="interior__slide slide"><img src="img/interior1.jpg" alt="interior" class="interior__img"></div>
+                <div class="interior__slide slide"><img src="img/interior1.jpg" alt="interior" class="interior__img"></div>
+                <div class="interior__slide slide"><img src="img/interior1.jpg" alt="interior" class="interior__img"></div>
                 <a href="#" class="prev prev_two"><img src="icon/arrow-left.svg" alt="arrow"></a>
                 <a href="#" class="next next_two"><img src="icon/arrow-right.svg" alt="arrow"></a>
             </div>
@@ -116,10 +120,10 @@
             <h2 class="question__title">Остались вопросы, напишите нам!</h2>
             <div class="question__modal">
                 <form class="question__form">
-                    <input type="text" name="name" class="question__input" placeholder="Имя">   
-                    <input type="number" name="phone-number" class="question__input" placeholder="Телефон"> 
-                    <textarea name="text" class="question__text" placeholder="Ваш вопрос"></textarea>
-                    <button class="btn btn_big btn_question">Отправить</button>
+                    <input type="text" name="name" required class="question__input" placeholder="Имя">   
+                    <input type="text" name="phone-number" required class="question__input" placeholder="Телефон"> 
+                    <textarea name="text" class="question__text" required placeholder="Ваш вопрос"></textarea>
+                    <button class="btn btn_big btn_question" name="submit" type="submit">Отправить</button>
                 </form>
             </div>
         </div>
@@ -164,6 +168,8 @@
 
     <script src='js/slide.js'></script>
     <script src='js/modal.js'></script>
+    <script src='js/hamburger.js'></script>
+    <script src='js/forms.js'></script>
     <script>
         bindModal('.btn_question', '.modal_three', '.modal_three .modal__close');
     </script>

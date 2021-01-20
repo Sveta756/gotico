@@ -9,9 +9,10 @@
 <body>
     <header class="header">
         <div class="container">
-            <!-- <div class="icon">
+            <a href="index.html" class="header__logo header__logo_mobile"><img src="icon/logo.png" alt="logo"></a>
+            <div class="icon">
                 <div class="hamburger"></div>
-            </div>  -->
+            </div> 
            <div class="header__block">
                 <a href="index.html" class="header__logo"><img src="icon/logo.png" alt="logo"></a>
                 <nav class="header__nav">
@@ -33,8 +34,8 @@
 
     <section class="main">
         <div class="container">
-            <div class="main__slider">
-                <div class="main__slide slide-one">
+            <div class="main__slider" id="slider">
+                <div class="main__slide slide-one slide">
                     <h1 class="main__title">Готическая кофейня в Санкт-Петербурге</h1>
                     <p class="main__text">
                         Наша кофейня - это атмосферное пространство в готическом стиле. Здесь можно вкусно провести время за чашечкой кофе и свежей выпечкой. К нам приходят за уникальными вечеринками и праздниками. 
@@ -44,14 +45,14 @@
                         <button class="btn btn_one btn_modalopen">Забронировать</button>
                     </div>
                 </div>
-                <div class="main__slide slide-two">
+                <div class="main__slide slide-two slide">
                     <h1 class="main__title">Открытие готической кофейни в Санкт-Петербурге <span>через 2 месяца</span></h1>
                     <div class="main__slide-footer">
                         <p class="main__adress">Большой проспект П. С., 64</p>
                         <button class="btn btn_modalopen">Забронировать</button>
                     </div>
                 </div>
-                <div class="main__slide main__slide_last">
+                <div class="main__slide main__slide_last slide">
                     <h1 class="main__title main__title_last">Ваши самые необычные праздники только у нас</h1>
                     <div class="main__slide-footer">
                         <p class="main__adress">Большой проспект П. С., 64</p>
@@ -60,6 +61,9 @@
                 </div>
                 <a href="#" class="prev"><img src="icon/left.svg" alt="arrow"></a>
                 <a href="#" class="next"><img src="icon/right.svg" alt="arrow"></a>
+            </div>
+            <div class="main__mobile-text">
+                Наша кофейня - это атмосферное пространство в готическом стиле. Здесь можно вкусно провести время за чашечкой кофе и свежей выпечкой. К нам приходят за уникальными вечеринками и праздниками. 
             </div>
         </div>
     </section>
@@ -70,7 +74,7 @@
                <h3 class="title">Некоторые позиции из меню</h3>
                <div class="little-menu__link">
                    <a href="menu.html" class="link">Перейти в меню</a>
-                   <img src="icon/Arrow.svg" alt="arrow">
+                   <img src="icon/Arrow.svg" alt="arrow" class="link__img">
                 </div>
            </div>
            <div class="little-menu__cards">
@@ -109,7 +113,7 @@
                 <h3 class="title">Интерьер кофейни</h3>
                 <div class="little-decor__link">
                     <a href="#" class="link">Перейти в раздел о кофейне</a>
-                    <img src="icon/Arrow.svg" alt="arrow">
+                    <img src="icon/Arrow.svg" alt="arrow" class="link__img">
                  </div>
             </div>
             <div class="little-decor__images">
@@ -129,7 +133,7 @@
                 </p>
                 <div class="services__link">
                     <a href="about.html" class="link">Перейти в услуги</a>
-                    <img src="icon/Arrow.svg" alt="arrow">
+                    <img src="icon/Arrow.svg" alt="arrow" class="link__img">
                  </div>
             </div>
             <div class="services__cards">
@@ -207,18 +211,18 @@
         </div>
     </footer>
 
-    <div class="overlay" data-modal>
+    <div class="overlay" id="modal_one">
         <div class="modal modal_one">
             <h2 class="modal__title">Готическая кофейня Gotico</h2>
             <p class="modal__text">Большой проспект П. С., 64</p>
             <form class="modal__form">
-                <input type="datetime" name="date" required class="modal__input" placeholder="Дата / время"> 
+                <input type="datetime-local" name="date" required class="modal__input" placeholder="Дата / время"> 
                 <input type="number" name="quantity" required class="modal__input" placeholder="Количество человек">   
                 <input type="text" name="name" required class="modal__input" placeholder="Имя">   
                 <input type="text" name="second name" required class="modal__input" placeholder="Фамилия">  
                 <input type="email" name="email" required class="modal__input" placeholder="Email">   
                 <input type="text" name="phone-number" required  class="modal__input" placeholder="Телефон"> 
-                <button class="btn btn_modal" name="submit" type="submit">Забронировать</button>    
+                <button class="btn btn_modal btn_submit" name="submit" type="submit">Забронировать</button>    
             </form>
            
             <div class="modal__close"><img src="icon/close.svg" alt="close" class="modal__img"></div>
@@ -226,7 +230,7 @@
     </div>
 
 
-    <div class="overlay" data-modal>
+    <div class="overlay" id="modal-two">
         <div class="modal modal_two">
             <h2 class="modal__title">Готическая кофейня Gotico</h2>
             <p class="modal__text">Большой проспект П. С., 64</p>
@@ -236,18 +240,12 @@
         </div>
     </div>
 
-    <!-- <div class="overlay">
-        <div class="modal modal_three">
-            <h2 class="modal__title">Готическая кофейня Gotico</h2>
-            <p class="modal__text">Большой проспект П. С., 64</p>
-            <p class="modal__text-main modal__text-main_mr">Спасибо за отзыв</p>
-            <p class="modal__text-footer">Мы учтем все ваши пожелания</p>
-            <div class="modal__close"><img src="icon/close.svg" alt="close" class="modal__img"></div>
-        </div>
-    </div> -->
-
     <script src="js/modal.js"></script>
+    <script>
+         bindModal('.btn_modalopen', '.modal_one', '.modal_one .modal__close');
+    </script>
     <script src="js/forms.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/slide.js"></script>
+    <script src='js/hamburger.js'></script>
 </body>
 </html>
