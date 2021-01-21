@@ -3,6 +3,7 @@ function bindModal(triggerSelector, modalSelector, closeSelector) {
         modal = document.querySelector(modalSelector),
         close = document.querySelector(closeSelector),  
         overlay = document.querySelector('.overlay'),  
+        html = document.querySelector('html'),
         scroll = calcScroll(),
         windows = document.querySelectorAll('[data-modal]'); 
 
@@ -17,6 +18,7 @@ function bindModal(triggerSelector, modalSelector, closeSelector) {
             });
 
             modal.style.display = 'block';
+            html.style.overflow = 'hidden';
             document.body.style.overflow = 'hidden';
             overlay.style.display = 'block';
             document.body.style.marginRight = `${scroll}px`;
@@ -32,6 +34,7 @@ function bindModal(triggerSelector, modalSelector, closeSelector) {
 
         modal.style.display = 'none';
         document.body.style.overflow = '';
+        html.style.overflow = '';
         overlay.style.display = 'none';
         document.body.style.marginRight = `0px`;
         //
@@ -56,3 +59,5 @@ function calcScroll() {
     return scrollWidth;
 }
  
+bindModal('.btn_modalopen', '.modal_one', '.modal_one .modal__close');
+// bindModal('.btn_question', '.modal_three', '.modal_three .modal__close');

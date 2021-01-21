@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', function() {
     inputs = document.querySelectorAll('input'),
     modalSuccess = document.querySelector('.modal_two'),
     overlay = document.querySelector('#modal-two'),
+    html = document.querySelector('html'),
     close = document.querySelector('.modal_two .modal__close'),
     modal = document.querySelector('#modal_one'),
     phoneInput = document.querySelector('input[name="phone-number"]');
@@ -15,6 +16,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
     const newModal = () => {
+        html.style.overflow = 'hidden';
         modal.style.display = 'none';
         overlay.style.display = 'block';
         modalSuccess.style.display = 'block';
@@ -22,6 +24,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     close.addEventListener('click', () => {
         overlay.style.display = 'none';
+        html.style.overflow = '';
         modalSuccess.style.display = 'none';
         document.body.style.overflow = '';
         document.body.style.marginRight = `0px`;

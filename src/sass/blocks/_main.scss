@@ -20,7 +20,7 @@
         animation-duration: 1.5s;
         &_last {
             justify-content: space-between;
-            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../img/mainslider3.png') center center/cover no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../img/mainslider3.jpg') center center/cover no-repeat;
         }
     }
     &__title {
@@ -30,7 +30,7 @@
         font-family: 'CormorantInfantBold', serif;
         color: $main-color;
         text-align: center;
-        margin-bottom: 51px;
+        margin-bottom: 45px;
         span {
             font-size: 96px;
             line-height: 46px;

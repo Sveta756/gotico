@@ -465,7 +465,7 @@
         }
         &__block {
             padding: 22px 10px 32px;
-            min-height: 350px;
+            min-height: 380px;
             background: #131315 !important;
             flex-direction: column;
             position: fixed;
@@ -530,9 +530,9 @@
     }
     .link {
         font-size: 18px;
-        &__img {
-            display: none;
-        }
+    }
+    .link-img {
+        display: none;
     }
     .btn {
         min-height: 50px;
@@ -1139,6 +1139,9 @@
             font-size: 20px;
             line-height: 26px;  
         }
+        &_two {
+            padding-top: 40px;
+        }
     }
     .btn {
         font-size: 24px;
@@ -1146,5 +1149,8 @@
         &__modal {
             min-height: 40px;
         }
+    }
+    .icon {
+        right: 15px;
     }
 }
