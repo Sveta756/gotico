@@ -3,6 +3,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
         &_stretch {
             align-items: stretch;
         }
@@ -23,6 +27,7 @@
         line-height: 58px;
         color: $heading-color;
         cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
         &:hover {
             color: $main-color;
             text-shadow:0 0 4px $heading-color;;

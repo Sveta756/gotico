@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
 
         items.forEach(item => {
-            item.classList.add('animated');
+            // item.classList.add('animated');
             item.style.display = 'none';
         });
 
