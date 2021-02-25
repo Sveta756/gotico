@@ -6,10 +6,10 @@ const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
-const newer = require('gulp-newer');
+const newer = require('gulp-newer');// таски только для изменившихся файлов.
 const babel = require('gulp-babel');
-const terser = require('gulp-terser');
-const plumber = require('gulp-plumber');
+const terser = require('gulp-terser'); //min js
+const plumber = require('gulp-plumber'); //перехватывает ошибки
 const del = require('del');
 
 gulp.task('server', function() {

@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', function() {
     let headerMenu = document.querySelector('.header__block');
     let scrollHamb = calcScroll();
 
-    function calcScroll() {
+    function calcScroll() {  //рассчет размера скролла, чтобы контент не скакал 
         let div = document.createElement('div');
 
         div.style.width = '50px';
@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', function() {
         return scrollWidth;
     }
 
-    hamburger.addEventListener('click', () => {
+    hamburger.addEventListener('click', () => {  //обработчик события
         if(hamburger.classList.contains('active')) {
             hamburger.classList.remove('active');
             headerMenu.classList.remove('show');

@@ -12,17 +12,17 @@ window.addEventListener('DOMContentLoaded', function() {
 
     phoneInput.addEventListener('input', () => {
         phoneInput.value = phoneInput.value.replace(/\D/, '');
-    });
+    });  //в поле с телф можно вводить только цифры
 
 
-    const newModal = () => {
+    const newModal = () => { //скрываю первое модальное окно и показываю новое в случае успеха
         html.style.overflow = 'hidden';
         modal.style.display = 'none';
         overlay.style.display = 'block';
         modalSuccess.style.display = 'block';
     };
 
-    close.addEventListener('click', () => {
+    close.addEventListener('click', () => { // закрытие модального окна
         overlay.style.display = 'none';
         html.style.overflow = '';
         modalSuccess.style.display = 'none';
@@ -30,29 +30,29 @@ window.addEventListener('DOMContentLoaded', function() {
         document.body.style.marginRight = `0px`;
     });
 
-    const message = {
+    const message = {  //объект с текстом, что можем показать пользователю
         loading: 'Загрузка',
         failure: 'Что-то пошло не так...'
     };
 
 
     const postData = async (url, data) => {
-        document.querySelector('.class-modal').textContent = message.loading;
-        let res = await fetch(url, {
+        document.querySelector('.class-modal').textContent = message.loading; //вставляем текст загрузки
+        let res = await fetch(url, { //fetch Api асинхронная операция
             method: "POST",
             body: data
         });
 
-        return await res.text();
+        return await res.text(); //возвращаем результат запроса
     };
 
-    const clearInputs = () => {
+    const clearInputs = () => { //функция очистки инпутов
         inputs.forEach(item => {
             item.value = '';
         });
     };
 
-    const addAttr = () => {
+    const addAttr = () => { //отключаем возможность заполнять инпуты заранее введеным текстом
         inputs.forEach( i => {
             i.setAttribute('autocomplete', 'off');
         });
@@ -61,26 +61,24 @@ window.addEventListener('DOMContentLoaded', function() {
     addAttr();
 
     form.forEach( item => {
-        item.addEventListener('submit', (e) => {
-            e.preventDefault();
-            let statusMessage = document.createElement('div');
-            statusMessage.classList.add('class-modal');
-            item.appendChild(statusMessage);
-
-            const formData = new FormData(item);
+        item.addEventListener('submit', (e) => { //обработчик на формы
+            e.preventDefault(); //чтобы не перезагружалась страница
+            let statusMessage = document.createElement('div'); //блок для помещения сообщения
+            statusMessage.classList.add('class-modal'); 
+            item.appendChild(statusMessage); //добавляем блок в форму
+ 
+            const formData = new FormData(item); //создаем объект формдата, собираем данные из формы
 
             postData('server/server.php', formData)
-                .then(res => {
+                .then(res => { //успех
                     console.log(res);
-                    // statusMessage.innerHTML = message.success;
                     newModal();
-                    // bindModal('.btn_submit', '.modal_two', '.modal_two .modal__close');
                 })
-                .catch(() => statusMessage.textContent = message.failure)
-                .finally(() => {
+                .catch(() => statusMessage.textContent = message.failure) //ошибка
+                .finally(() => { //то, что всегда выполнится 
                     clearInputs();
                     setTimeout(() => {
-                        statusMessage.remove();
+                        statusMessage.remove(); //удаляем элемент с сообщением со стр
                     }, 5000);
                 });
         });
@@ -89,4 +87,4 @@ window.addEventListener('DOMContentLoaded', function() {
 });
  
     
-// };
+
